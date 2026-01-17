@@ -1,5 +1,5 @@
 function slugify(title) {
-  return title.toLowerCase().replace(/ /g, "-");
+  return title.trim().toLowerCase().replace(/\s+/g, "-");
 }
 
 console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
